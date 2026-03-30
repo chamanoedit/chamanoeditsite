@@ -63,7 +63,7 @@ export function PacksSection() {
                 playsInline
                 poster="/images/video-poster.jpg"
               >
-                <source src="https://chamanoedit.b-cdn.net/chamapack.mp4" type="video/mp4" />
+                <source src="https://chamanoedit2.b-cdn.net/chamapack.mp4" type="video/mp4" />
                 Seu navegador não suporta o elemento de vídeo.
               </video>
             </motion.div>

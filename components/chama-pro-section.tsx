@@ -211,7 +211,7 @@ export function ChamaProSection() {
                 }}
               >
                 <video className="w-full h-full object-cover" autoPlay muted loop playsInline>
-                  <source src="https://chamanoedit.b-cdn.net/GIF - CHAMAPACK.mp4" type="video/mp4" />
+                  <source src="https://chamanoedit2.b-cdn.net/GIF - CHAMAPACK.mp4" type="video/mp4" />
                 </video>
               </div>
 
@@ -230,7 +230,7 @@ export function ChamaProSection() {
               </p>
               <div className="w-full overflow-hidden" style={{ aspectRatio: "16/9", borderRadius: "12px", border: "2px solid #ffffff" }}>
                 <video className="w-full h-full object-cover" autoPlay muted loop playsInline>
-                  <source src="https://chamanoedit.b-cdn.net/GIF - CHAMAPACK.mp4" type="video/mp4" />
+                  <source src="https://chamanoedit2.b-cdn.net/GIF - CHAMAPACK.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
