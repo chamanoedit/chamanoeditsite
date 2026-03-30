@@ -29,7 +29,7 @@ export function Footer() {
             {/* Redes Sociais */}
             <div className="flex gap-4 pt-2">
               <a
-                href="https://instagram.com/chamanoedit"
+                href="https://instagram.com/chamadegui"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/60 hover:text-white transition-colors"
