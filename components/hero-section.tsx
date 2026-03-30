@@ -14,7 +14,7 @@ export function HeroSection() {
         {/* Background Video desktop */}
         <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
           <video autoPlay loop muted playsInline preload="auto" className="absolute inset-0 w-full h-full object-cover">
-            <source src="/bg.mov" type="video/mp4" />
+            <source src="https://chamanoedit.b-cdn.net/bg.mov" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-black/50" />
         </div>
@@ -95,7 +95,7 @@ export function HeroSection() {
       <div className="md:hidden relative" style={{ height: "50svh" }}>
         {/* Vídeo de fundo */}
         <video autoPlay loop muted playsInline preload="auto" className="absolute inset-0 w-full h-full object-cover">
-          <source src="/bg.mov" type="video/mp4" />
+          <source src="https://chamanoedit.b-cdn.net/bg.mov" type="video/mp4" />
         </video>
         {/* Overlay escuro */}
         <div className="absolute inset-0 bg-black/55" />
