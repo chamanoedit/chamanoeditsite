@@ -36,7 +36,7 @@ export function HeroSection() {
           >
             <div className="relative w-full max-w-6xl">
               <Image
-                src="/images/headline.png"
+                src="/images/headline2.png"
                 alt="Sua Mensagem Alcançando Nações - Se torne um editor de resultados"
                 width={1400}
                 height={600}
@@ -111,7 +111,7 @@ export function HeroSection() {
             className="w-full"
           >
             <Image
-              src="/images/headline.png"
+              src="/images/headline2.png"
               alt="Sua Mensagem Alcançando Nações"
               width={1400}
               height={600}
