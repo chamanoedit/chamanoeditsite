@@ -77,15 +77,29 @@ declare global {
 }
 
 function trackAndRedirect(plan: { id: string; checkoutUrl: string; price: string; totalPrice: string }) {
+  const contentName =
+    plan.id === "combo"
+      ? "Curso + Pack ChamaPRO"
+      : plan.id === "curso"
+      ? "ChamaNoEdit Curso"
+      : "ChamaPack PRO"
+
+  const value = parseFloat(plan.totalPrice.replace(/\./g, "").replace(",", "."))
+
   if (typeof window !== "undefined" && typeof window.fbq === "function") {
     window.fbq("track", "InitiateCheckout", {
-      content_name: plan.id === "combo" ? "Curso + Pack ChamaPRO" : plan.id === "curso" ? "ChamaNoEdit Curso" : "ChamaPack PRO",
+      content_name: contentName,
       content_ids: [plan.id],
+      content_type: "product",
       currency: "BRL",
-      value: parseFloat(plan.totalPrice.replace(".", "").replace(",", ".")),
+      value: value,
     })
   }
-  window.open(plan.checkoutUrl, "_blank")
+
+  // Aguarda 300ms para garantir que o pixel dispare antes do redirecionamento
+  setTimeout(() => {
+    window.open(plan.checkoutUrl, "_blank")
+  }, 300)
 }
 
 function CheckIcon() {
