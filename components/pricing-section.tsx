@@ -4,24 +4,6 @@ import { Check, ShieldCheck, Clock, Star } from "lucide-react"
 
 const pricingPlans = [
   {
-    id: "combo",
-    title: "Curso + pack chamaPRO",
-    subtitle: "",
-    originalPrice: null,
-    installments: "10X",
-    price: "104",
-    cents: ",40",
-    totalPrice: "1044,00",
-    checkoutUrl: "https://pay.hotmart.com/S99563210F?checkoutMode=10&bid=1774837879021",
-    features: [
-      "Acesso completo ao curso CHAMANOEDIT",
-      "Pack completo ChamaPRO",
-    ],
-    buttonText: "Comprar AGORA!",
-    isLarge: true,
-    mobileOrder: 3,
-  },
-  {
     id: "curso",
     title: "CHAMA",
     titleSuper: "NO",
@@ -45,28 +27,6 @@ const pricingPlans = [
     buttonText: "Comprar AGORA!",
     highlighted: true,
     mobileOrder: 1,
-  },
-  {
-    id: "pack",
-    title: "ChamaPack PRO",
-    subtitle: "Presets para Premiere",
-    originalPrice: null,
-    installments: "10X",
-    price: "19",
-    cents: ",70",
-    totalPrice: "197,00",
-    checkoutUrl: "https://pay.hotmart.com/K103405939L?bid=1774837835344",
-    description: "Não precisa After Effects\nNão precisa saber animar",
-    tagline: "arrastou, soltou e tá pronto",
-    features: [
-      "+100 presets",
-      "Presets Áudio",
-      "Presets Movimento",
-      "Presets PNG",
-      "Presets Text",
-    ],
-    buttonText: "Quero só o Pack",
-    mobileOrder: 2,
   },
 ]
 
@@ -119,25 +79,15 @@ export function PricingSection() {
       
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-3 gap-6 items-end">
-          {[...pricingPlans].sort((a, b) => {
-            // No mobile, ordena por mobileOrder; no desktop mantém ordem original
-            if (typeof window !== "undefined" && window.innerWidth < 768) {
-              return (a.mobileOrder ?? 99) - (b.mobileOrder ?? 99)
-            }
-            return 0
-          }).map((plan) => (
+        <div className="flex justify-center">
+          {pricingPlans.map((plan) => (
             <div
               key={plan.id}
               className={`
-                relative p-6 md:p-8 flex flex-col
+                relative p-6 md:p-8 flex flex-col w-full max-w-md
                 transition-all duration-300 ease-out
                 hover:scale-[1.02] hover:-translate-y-1
-                ${plan.isLarge ? "md:min-h-[520px]" : ""}
                 ${plan.highlighted ? "md:min-h-[580px]" : ""}
-                ${plan.id === "combo" ? "order-3 md:order-none" : ""}
-                ${plan.id === "curso" ? "order-1 md:order-none" : ""}
-                ${plan.id === "pack" ? "order-2 md:order-none" : ""}
               `}
               style={{
                 backgroundColor: plan.highlighted 

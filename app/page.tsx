@@ -7,7 +7,6 @@ import { MetodoChamaSection } from "@/components/metodo-chama-section"
 import { ExplosionCarousel } from "@/components/explosion-carousel"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { ComparisonSection } from "@/components/comparison-section"
-import { ChamaProSection } from "@/components/chama-pro-section"
 import { ProfessionalSection } from "@/components/professional-section"
 import { ModulesSection } from "@/components/modules-section"
 import { PacksSection } from "@/components/packs-section"
@@ -31,7 +30,6 @@ export default function Home() {
       <ExplosionCarousel />
       <ModulesSection />
       <ComparisonSection />
-      <ChamaProSection />
       <AboutSection />
       <PricingSection />
       <FaqSection />

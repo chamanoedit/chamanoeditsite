@@ -768,18 +768,6 @@
     z-index: 100;
   }
 
-  .order-1 {
-    order: 1;
-  }
-
-  .order-2 {
-    order: 2;
-  }
-
-  .order-3 {
-    order: 3;
-  }
-
   .order-first {
     order: -9999;
   }
@@ -5458,12 +5446,6 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:order-none {
-      order: 0;
-    }
-  }
-
-  @media (min-width: 48rem) {
     .md\:mt-15 {
       margin-top: calc(var(--spacing) * 15);
     }
@@ -5502,12 +5484,6 @@
   @media (min-width: 48rem) {
     .md\:h-16 {
       height: calc(var(--spacing) * 16);
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:min-h-\[520px\] {
-      min-height: 520px;
     }
   }
 
